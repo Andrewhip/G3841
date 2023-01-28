@@ -12,13 +12,14 @@ int ReadData(string msg)
 int[] Gen1DArr(int num, int begin, int end)
 {
     Random rnd = new Random();
-    int[] arr = new int[num];
+    int[] arr = new int[2];
     for (int i = 0; i < arr.Length; i++)
     {
         arr[i] = rnd.Next(begin, end);
     }
     return arr;
 }
+
 void Print1DArr(int[] arr)
 {
     Console.Write("[");
