@@ -1,9 +1,4 @@
-﻿//Задача №30
-//Напишите программу, которая выводит массив из 8 элементов, 
-//заполненный нулями и единицами в случайном порядке.
-
-//Метод читает данные от пользователя
-int ReadData(string msg)
+﻿int ReadData(string msg)
 {
     Console.WriteLine(msg);
     return int.Parse(Console.ReadLine() ?? "0");
@@ -12,7 +7,7 @@ int ReadData(string msg)
 int[] Gen1DArr(int num, int begin, int end)
 {
     Random rnd = new Random();
-    int[] arr = new int[2];
+    int[] arr = new int[num];
     for (int i = 0; i < arr.Length; i++)
     {
         arr[i] = rnd.Next(begin, end);
@@ -35,3 +30,9 @@ int arrLen = ReadData("Введите длину массива.");
 int[] arr = Gen1DArr(arrLen, 0, 2);
 
 Print1DArr(arr);
+
+
+
+
+
+
