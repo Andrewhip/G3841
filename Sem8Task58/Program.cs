@@ -6,7 +6,7 @@ int n2 = ReadData("Введите количество столбцов втор
 //проверка на размеры матриц
 bool SizeCheck(int[,] arr)
 {
-    if ((m == n)&&(m2 == n2))
+    if ((m1 == n1)&&(m2 == n2))
     {
         return true;
     }
